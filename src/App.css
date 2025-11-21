@@ -1,0 +1,124 @@
+body{
+  margin: 0%;
+  padding: 0%;
+  background-color: rgb(249, 249, 249);
+}
+
+header{
+  text-align: center;
+  padding-top: 2vh;
+  text-shadow: 1px 2px 4px rgb(81, 81, 81);
+  color: rgba(44, 44, 44, 0.953);
+}
+
+header h1{
+  font-size: clamp(28px,4vw,48px);
+}
+
+header p{
+  font-size: clamp(15px,3vw,24px);
+}
+
+#navDiv{
+  width: 80%;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navSec{
+  width: 49%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.192);
+}
+
+.navText{
+  font-size: clamp(14px,2vw,24px);
+  margin-left: 25px;
+}
+
+.navNum{
+  font-size: clamp(20px,3vw,36px);
+  margin-left: 25px;
+  margin-top: 0px;
+}
+
+#addBtn{
+  width: 80%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#addBtn button{
+  width: 20%;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(213, 213, 213),rgba(88, 88, 88, 0.302));
+  border-radius: 10px;
+  font-size: clamp(12px,2vw,22px);
+}
+
+
+button p{
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+#addBtn input{
+  width: 55%;
+  border-radius: 10px;
+  font-size: clamp(14px,2vw,22px);
+  padding-left: 1vw;
+
+}
+
+#errorP{
+  color: red;
+  max-width: 1000px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(12px,2vw,18px);
+}
+
+#errorP p{
+  margin-top: 0.5vh;
+}
+
+#cont{
+  width: 80%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
+}
+
+.taskDiv{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding-left: 3vw;
+  font-size: clamp(15px,3vw,25px);
+  border-radius: 12px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.337);
+  margin-top: 1vh;
+}
+
+.taskDiv p{
+  margin-left: 2vw;
+}
+
+
+.taskDiv input{
+  width: 3vw;
+  border-radius: 12px;
+  accent-color: #858585;
+}
+
