@@ -54,7 +54,7 @@ export default function Add(props){
     return(
         <>
             <div id="addBtn">
-                <input ref={inp} type="text" placeholder="Name your new task"/>
+                <input ref={inp} type="text" placeholder="Type something to do..."/>
                 <button onClick={() => addNewTask()}> <p>Add New Task</p></button>
                 <button onClick={handleSortClick}>Sort: {props.sortType}</button>
             </div>

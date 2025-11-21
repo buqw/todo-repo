@@ -63,21 +63,22 @@ header p{
   cursor: pointer;
   background: linear-gradient(to right, rgb(213, 213, 213),rgba(88, 88, 88, 0.302));
   border-radius: 10px;
-  font-size: clamp(12px,2vw,22px);
+  font-size: clamp(10px,2vw,22px);
+  border: 1px solid rgba(0, 0, 0, 0.303);
 }
 
 
 button p{
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  margin-top: 0.6vh;
+  margin-bottom: 0.6vh;
 }
 
 #addBtn input{
   width: 55%;
   border-radius: 10px;
-  font-size: clamp(14px,2vw,22px);
+  font-size: clamp(12px,2vw,22px);
   padding-left: 1vw;
-
+  border: 1px solid rgba(0, 0, 0, 0.428);
 }
 
 #errorP{
