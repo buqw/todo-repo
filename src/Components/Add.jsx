@@ -1,10 +1,15 @@
 import { useState, useEffect } from "react"
 import { useRef } from "react";
+
 export default function Add(props){
 
     const inp = useRef(null);
     const [message, setMessage] = useState("");
+    const [inputText, setInputText] = useState("");
 
+    const handleChange = (e)=>{
+        setInputText(e.target.value)
+    }
     useEffect(()=>{
         function handleKey(e){
             if(e.key === "Enter"){
@@ -17,6 +22,14 @@ export default function Add(props){
         }
     },[])
 
+    useEffect(()=>{
+        if(inputText.length >35){
+            setMessage("Task's name shouldn't be long")
+        }
+        else{
+            setMessage("")
+        }
+    },[inputText])
     const handleSortClick = () =>{
         if(props.sortType == 'Old-New'){
             props.setSortType('New-Old')
@@ -40,7 +53,7 @@ export default function Add(props){
         if(value === ""){
             setMessage("Enter a name for the task");
         }
-        else if(value.length >40){
+        else if(value.length >35){
             setMessage("The name is too long!.")
         }
         else{
@@ -54,9 +67,9 @@ export default function Add(props){
     return(
         <>
             <div id="addBtn">
-                <input ref={inp} type="text" placeholder="Type something to do..."/>
+                <input onChange={handleChange} ref={inp} type="text" placeholder="Type something to do..."/>
                 <button onClick={() => addNewTask()}> <p>Add New Task</p></button>
-                <button onClick={handleSortClick}>Sort: {props.sortType}</button>
+                <button onClick={handleSortClick}><p>Sort: {props.sortType}</p></button>
             </div>
 
             <div id="errorP">

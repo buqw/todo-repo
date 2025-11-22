@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Nav activeTasks={activeTasks} checkedTasks={checkedTasks}/>
       <Add sortType={sortType} setSortType={setSortType} activeTasks={activeTasks} setActiveTasks={setActiveTasks}/>
-      <Tasks sortType={sortType} activeTasks={activeTasks} checkedTasks = {checkedTasks} setChecked={setChecked}/>
+      <Tasks sortType={sortType} activeTasks={activeTasks} setActiveTasks={setActiveTasks} checkedTasks = {checkedTasks} setChecked={setChecked}/>
 
     </>
   );

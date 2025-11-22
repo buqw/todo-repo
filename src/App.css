@@ -1,7 +1,7 @@
 body{
   margin: 0%;
   padding: 0%;
-  background-color: rgb(249, 249, 249);
+  background-color: rgb(228, 232, 255);
 }
 
 header{
@@ -31,11 +31,17 @@ header p{
 
 .navSec{
   width: 49%;
-  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.192);
+  backdrop-filter: blur(60px);
 }
 
+#leftNav{
+  background: linear-gradient(to right, rgba(142, 153, 251, 0.613), rgba(26, 199, 252, 0.689));
+}
+#rightNav{
+  background: linear-gradient(to left, rgba(142, 153, 251, 0.613), rgba(26, 199, 252, 0.689));
+}
 .navText{
   font-size: clamp(14px,2vw,24px);
   margin-left: 25px;
@@ -61,16 +67,18 @@ header p{
 #addBtn button{
   width: 20%;
   cursor: pointer;
-  background: linear-gradient(to right, rgb(213, 213, 213),rgba(88, 88, 88, 0.302));
+  background-color: rgba(238, 130, 238, 0.579);
   border-radius: 10px;
   font-size: clamp(10px,2vw,22px);
   border: 1px solid rgba(0, 0, 0, 0.303);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.277);
 }
 
 
 button p{
   margin-top: 0.6vh;
   margin-bottom: 0.6vh;
+  color: rgb(255, 255, 255);
 }
 
 #addBtn input{
@@ -79,6 +87,7 @@ button p{
   font-size: clamp(12px,2vw,22px);
   padding-left: 1vw;
   border: 1px solid rgba(0, 0, 0, 0.428);
+  
 }
 
 #errorP{
@@ -103,23 +112,51 @@ button p{
 }
 
 .taskDiv{
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.571);
   display: flex;
+  align-items: center;
   padding-left: 3vw;
   font-size: clamp(15px,3vw,25px);
   border-radius: 12px;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.337);
   margin-top: 1vh;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  overflow: hidden;
 }
 
 .taskDiv p{
   margin-left: 2vw;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 
 .taskDiv input{
-  width: 3vw;
   border-radius: 12px;
-  accent-color: #858585;
+  accent-color: #0979a9;
+  scale: 1.6; 
 }
 
+
+#blankCont{
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px rgba(0, 0, 0, 0.255) dashed;
+  border-radius: 12px;
+}
+
+#bigText{
+  font-size: clamp(20px,3vw,30px);
+  margin-top: 15vh;
+}
+#bigText p{
+  margin-bottom: 0%;
+}
+
+#smallText{
+  font-size: clamp(12px,2vw,20px);
+}
