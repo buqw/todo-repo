@@ -12,11 +12,10 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Nav activeTasks={activeTasks} checkedTasks={checkedTasks}/>
-      <Add sortType={sortType} setSortType={setSortType} activeTasks={activeTasks} setActiveTasks={setActiveTasks}/>
-      <Tasks sortType={sortType} activeTasks={activeTasks} setActiveTasks={setActiveTasks} checkedTasks = {checkedTasks} setChecked={setChecked}/>
-
+      < Header sortType={sortType} setSortType={setSortType} activeTasks={activeTasks} setActiveTasks={setActiveTasks} checkedTasks = {checkedTasks} setChecked={setChecked}/>
+      <Nav sortType={sortType} setSortType={setSortType} activeTasks={activeTasks} setActiveTasks={setActiveTasks} checkedTasks = {checkedTasks} setChecked={setChecked}/>
+      <Add sortType={sortType} setSortType={setSortType} activeTasks={activeTasks} setActiveTasks={setActiveTasks} checkedTasks = {checkedTasks} setChecked={setChecked}/>
+      <Tasks sortType={sortType} setSortType={setSortType} activeTasks={activeTasks} setActiveTasks={setActiveTasks} checkedTasks = {checkedTasks} setChecked={setChecked}/>
     </>
   );
 }
